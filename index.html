@@ -7,45 +7,59 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #111;
+      background-color: #111;
       color: #fff;
       margin: 0;
-      padding: 40px;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    h1 {
+    header h1 {
       font-size: 2.5em;
-      margin-bottom: 20px;
+      margin: 0;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 20px auto 0;
+      font-size: 1.1em;
+      color: #ccc;
     }
 
     .gallery {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
     }
 
-    .photo-card {
-      background: #222;
-      border-radius: 8px;
+    .album {
+      background-color: #1c1c1c;
+      border-radius: 10px;
       overflow: hidden;
       width: 300px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
+      text-align: center;
     }
 
-    .photo-card:hover {
+    .album:hover {
       transform: scale(1.05);
     }
 
-    .photo-card img {
+    .album img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .photo-card a {
+    .album a {
       display: block;
       padding: 15px;
       color: #00d4ff;
@@ -54,18 +68,38 @@
       background: #111;
     }
 
-    .photo-card a:hover {
-      text-decoration: underline;
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #222;
+      color: #aaa;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>📷 Moje portfolio</h1>
+  <header>
+    <h1>📸 Moje fotografie</h1>
+    <p>Vítám vás ve svém portfoliu! Fotím pro radost a zachycuji krásu všedních i nevšedních okamžiků. Níže najdete ukázky mých alb, která si můžete prohlédnout na Zoneramě.</p>
+  </header>
+
   <div class="gallery">
-    <div class="photo-card">
-      <img src="https://imgproxy.zonerama.com/2F6-ZZ1l47ZZqYFlrS5oK84m0OI=/fit-in/640x480/filters:quality(80):format(jpeg):no_upscale()/https%3A%2F%2Fcdn.zonerama.com%2Fz%2Feu%2Falbums%2F13%2F97%2F69%2F6%2Fimages%2F057c1d65-85a3-4389-9f41-d30f476fa3c5.jpg" alt="Ukázka alba">
-      <a href="https://eu.zonerama.com/RYf6/1397696" target="_blank">Zobrazit celé album</a>
+    <div class="album">
+      <img src="https://imgproxy.zonerama.com/2F6-ZZ1l47ZZqYFlrS5oK84m0OI=/fit-in/640x480/filters:quality(80):format(jpeg):no_upscale()/https%3A%2F%2Fcdn.zonerama.com%2Fz%2Feu%2Falbums%2F13%2F97%2F69%2F6%2Fimages%2F057c1d65-85a3-4389-9f41-d30f476fa3c5.jpg" alt="Album 1">
+      <a href="https://eu.zonerama.com/RYf6/1397696" target="_blank">Zobrazit album 1</a>
     </div>
+
+    <!-- Přidej další alba stejným způsobem -->
+    <!--
+    <div class="album">
+      <img src="NÁHLEDOVÝ_OBRÁZEK_URL" alt="Popis">
+      <a href="ODKAZ_NA_ALBUM" target="_blank">Zobrazit album</a>
+    </div>
+    -->
   </div>
+
+  <footer>
+    Kontakt: <a href="mailto:tvoje@email.cz">tvoje@email.cz</a> | Sleduj mě na Zoneramě: <a href="https://eu.zonerama.com/RYf6" target="_blank">můj profil</a>
+  </footer>
 </body>
 </html>
