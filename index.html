@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moje fotografické portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.05);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .photo-card a {
+      display: block;
+      padding: 15px;
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: bold;
+      background: #111;
+    }
+
+    .photo-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>📷 Moje portfolio</h1>
+  <div class="gallery">
+    <div class="photo-card">
+      <img src="https://imgproxy.zonerama.com/2F6-ZZ1l47ZZqYFlrS5oK84m0OI=/fit-in/640x480/filters:quality(80):format(jpeg):no_upscale()/https%3A%2F%2Fcdn.zonerama.com%2Fz%2Feu%2Falbums%2F13%2F97%2F69%2F6%2Fimages%2F057c1d65-85a3-4389-9f41-d30f476fa3c5.jpg" alt="Ukázka alba">
+      <a href="https://eu.zonerama.com/RYf6/1397696" target="_blank">Zobrazit celé album</a>
+    </div>
+  </div>
+</body>
+</html>
